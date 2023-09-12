@@ -1,9 +1,9 @@
 install:
-	pip install --upgrade pip &&/
+	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vvv --cov=hello -cov=gretings \
+	python -m pytest -vvv --cov=hello -cov=gretings /
 		--cov=smath --cov=web test
 	
 	python -m pytest --nbval notebook.ipynb # tests our jupyter notebook
